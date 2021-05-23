@@ -1,0 +1,44 @@
+1. 
+a) Serem portáveis, independetes do sistema operativo. E acesso eficiente a data.
+b) Ocupa bastante memória guardar os endereços dos blocos.
+
+2.
+a) Normalmente os ficheiros são guardados de forma organizada em pastas com nomes de forma à procura e acesso serem fáceis.
+Contudo, nas bases de dados podemos aceder a qualquer tabela, sem que haja uma divisão organizada em diferentes tópicos.
+
+3. 
+Em linux o nome da extensão não é importante, pois podemos dar qq nome que o sistema operativo sabe como processar o ficheiro.
+Em windows o tipo de ficheiro condiciona a forma como este vai ser processado pelo sistema operativo, esta extensão normalmente não é apresentada por uma questão de segurança que não convém andar a trocar o tipo e também por não ser necessário ao
+utilizador ler o tipo de extensão.
+
+6. 
+Files can not have the same name, as it represents its path, there are various modes in which the operating system operates differently such as symbolic links, directories, fifos and others. Permissions tell the system who as acess to that file both for read, write and execute.
+Also files have atributes which give certain properties to them.
+
+7.
+Many are the file operations that have a similar counterpart in the list of directory operations such as:  Create, Delete and Rename.
+The  readdir() function returns a pointer to a dirent structure representing
+       the next directory entry in the directory stream pointed to by dirp.  It re‐
+       turns  NULL  on  reaching the end of the directory stream or if an error oc‐
+       curred.
+
+read()  attempts  to read up to count bytes from file descriptor fd into the
+       buffer starting at buf.
+
+       On files that support seeking, the read operation commences at the file off‐
+       set, and the file offset is incremented by the number of bytes read.  If the
+       file offset is at or past the end of file, no bytes are read, and read() re‐
+       turns zero.
+
+9.
+Implementation 1)
+A - Simple file management, files are contiguous therefore we don't need a new structure to save file positions.
+D - When deleted, file blocks, holes can be created with specific sizes which can be not very practical for storing other files.
+
+Implementation 2)
+A - 
+D - 
+
+10.
+Hard links, são ficheiros que apontam para o mesmo espaço do disco enquanto Symbolic link são novos ficheiros que apontam para outro e não para um espaço de memória.
+Hard links são rápidos  em termos de acesso devido ao facto que o I-node é direto. Já os symbolic links permitem por exemplo aceder a ficheiros de outro disco.

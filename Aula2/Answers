@@ -1,0 +1,46 @@
+1. Differentiate program, process and thread.
+
+R: A program is a set of instructions and associated data that resides on the disk and is loaded by the operating system to perform some task.
+A process is a program in execution.
+Thread is the smallest unit of execution in a process. A process can have multiple threads running as part of it.
+
+2. 
+a) Present 5 relevant data items that differentiate a process from another.
+(Todos do slide, mas se forem únicos são estes 4)
+R: PID, text space, heap space, stack space. (environment terao as mesmas variaveis, diretoria podem ter a mesma que outro)
+
+b) Do the same for threads.
+
+R: Program counter, Registers, Stack, State.
+
+c) Present the data from a. and b. in a comparative table: one row for each item; one column for process and another for thread.
+
+3.
+
+a) Ss Ssl+ R I
+S-interruptible sleep (waiting for an event to complete)
+D-uninterruptible sleep (usually IO)
+I-Idle kernel thread
+T-stopped by job control signal
+t-stopped by debugger during the tracing
+W-paging (not valid since the 2.6.xx kernel)
+X-dead (should never be seen)
+Z-defunct ("zombie") process, terminated but not reaped by its parent
+
+Ready running blocked são os estados de cada processo.
+
+b) Escrever ps axo atributos a mostrar(separados por vírgula). (pid, ppid, command ...)
+
+4.
+R. Terminated está ligado a running em direção a terminated. (Indicando o fim do processo)
+New está ligado a ready em direção a ready. (Indica a criação de um estado pronto a executar).
+
+6.
+Process 							Thread
+Processes are heavyweight operations 				Threads are lighter weight operations
+Each process has its own memory space 			Threads use the memory of the process they belong to
+Inter-process communication is slow as processes have 	Inter-thread communication can be faster than inter-process communication because threads of the
+different memory addresses 					 same process share memory with the process they belong to
+Context switching between processes is more expensive 	Context switching between threads of the same process is less expensive
+Processes don’t share memory with other processes 		Threads share memory with other threads of the same process
+

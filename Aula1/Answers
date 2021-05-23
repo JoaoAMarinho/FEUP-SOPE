@@ -1,0 +1,16 @@
+7. Explain the two main functions of an operating system?
+
+R: An operating system has two main functions: (1) manage the computer's resources, such as the central processing unit, memory, disk drives, and printers and (2) execute and provide services for applications software.
+
+8. i. ii. and iii.
+
+9. Some system operations can be performed while in user mode, others only in kernel mode. 
+
+a) using the date command classify, in the above respect, the read and write operations on the internal clock. (Clue: date -s "20220913")
+R: It's possible to read from internal clock using date, although you can not modify the date in user mode. In contrast to kernel mode.
+
+b) name one (more) operation that can only be performed in kernel mode.
+R: These are interrupt instructions, input output management etc.
+
+
+

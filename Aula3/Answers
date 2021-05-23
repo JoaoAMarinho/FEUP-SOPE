@@ -1,0 +1,24 @@
+7.
+The use of signals in the communication of processes is often considered with some apprehension by application designers. Clarify the reason for this apprehension, presenting an illustrative, problematic situation.
+
+R: Quando recebemos um sinal não sabemos quem o enviou, o que pode levar a conflitos e também, este pode ser recebido a qualquer altura, não estando pronto para o receber.
+
+11.
+Anonymous pipes only are able to be used to comunicate between parent processes while named pipes can comunicate between anyother processes on the same computer 
+(local) or different computers over network.
+
+While named pipes are registered in a file with all the named pipes, the anonymous pipes, are really anonymous and never are registered
+
+Anonymous pipes are unidirectional providing simplex data flow while named pipes can be used one-way or two-way (duplex) communication providing bidirectional data flow
+    between multiple processes
+
+12.
+i. Pode ser feito entre qualqueres processos e o que se tem de fazer é enviar a informação de um dos processos (por um pipe) e posteriormente esperar pela 
+    resposta (noutro pipe diferente, visto que estes são unidirecionais). Já no outro teremos de esperar pela informação (pelo pipe que o outro processo vai 
+    enviar a informação) e quando a recebemos, processá-la e posteriormente enviá-la (pelo pipe que o outro processo está à espera de informação).
+
+ii. Só pode ser feito se os processos em questão forem parentes. Nesse caso um dos processos vai enviar a informação enquanto que o outro espera receber, e 
+    depois de enviar, vai esperar que o outro processo envie informação novamente.
+
+iii. Com sinais não se pode enviar informação, porém, poderiamos enviar diferentes sinais para diferentes cores (já que só teremos 7 cores disponíveis).
+

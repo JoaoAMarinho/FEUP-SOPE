@@ -1,0 +1,23 @@
+Ficha 4
+
+1.
+a) 
+i. 12KiB -> 20KiB, 10KiB -> 10KiB, 9KiB -> 18KiB.  (Primeiro lugar com espaço)
+ii. 12KiB -> 20KiB, 10KiB -> 18KiB, 9KiB -> 9KiB. (Começa com first fit, e dps segue de onde estava não volta ao início)
+iii. 12KiB -> 12KiB, 10KiB -> 10KiB, 9KiB -> 9KiB. (Escolha do melhor espaço de alocação)
+iv. 12KiB -> 20KiB, 10KiB -> 18KiB, 9KiB-> 15KiB. (Escolha do maior espaço para alocação).
+
+b)
+best fit >> next fit >> first fit >> worst fit.
+
+2.
+Advantage -> Swapping in and out a few pages is less expensive operation than swapping in and out the whole process at one go.
+Disadvantage -> Longer memory lookup times compared to variable memory, page tables consume additional memory.
+
+3.
+Using the mapping of page 0, it will reach a point when there are a lot of processes running and there will need to be an overlap of memory, because the allocated memory of each process are on top of one another.
+
+11.
+Slide 27 Memory Management.
+b) No because in both cases the total address space can exceed the sizo of physical memory.
+

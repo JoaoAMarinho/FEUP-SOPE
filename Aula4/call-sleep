@@ -1,0 +1,4 @@
+#!/bin/bash
+
+printenv USER
+sleep $1

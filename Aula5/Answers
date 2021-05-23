@@ -1,0 +1,23 @@
+8.
+a) For example if we have 5 bandits and they all need two guns to kill, if each one picks a gun, will cause the others to wait for a new gun to be free.
+Howerver, such case will never happen as all bandits need one more gun in orther to finish their job.
+
+b) Starvation:
+Starvation is a problem which is closely related to both, Livelock and Deadlock. In a dynamic system, requests for resources keep on happening.
+Thereby, some policy is needed to make a decision about who gets the resource when.
+This process, being reasonable, may lead to a some processes never getting serviced even though they are not deadlocked.
+
+A deadlock is a state in which each member of a group of actions, is waiting for some other member to release a lock.
+A livelock on the other hand is almost similar to a deadlock, except that the states of the processes involved in a livelock constantly keep on changing with regard to one another, none progressing.
+Thus Livelock is a special case of resource starvation, as stated from the general definition, the process is not progressing.
+
+Livelock acontece este caso pois temos o while(true).
+
+9.
+a) Two costumers get to the store and one sees that has a place to seat, goes o sit but the other one does not see that the first has seated so he sits has well.
+
+b) When a client is too slow to sit on the chair the barber sleeps until someone appears, although no client will appear has it thinks tthere is still a costumer in the chair.
+
+10.
+a) Writer starvation, one writer is too slow to reach the writting phase so the others will write before he can reach its purpose, making him starve,
+
