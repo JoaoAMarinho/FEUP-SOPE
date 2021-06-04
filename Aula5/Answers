@@ -16,7 +16,7 @@ Livelock acontece este caso pois temos o while(true).
 9.
 a) Two costumers get to the store and one sees that has a place to seat, goes o sit but the other one does not see that the first has seated so he sits has well.
 
-b) When a client is too slow to sit on the chair the barber sleeps until someone appears, although no client will appear has it thinks tthere is still a costumer in the chair.
+b) When a client is too slow to sit on the chair the barber sleeps until someone appears, although no client will appear has it thinks there is still a costumer in the chair.
 
 10.
 a) Writer starvation, one writer is too slow to reach the writting phase so the others will write before he can reach its purpose, making him starve,
